@@ -56,6 +56,7 @@ export function cancelTaskNotification(taskId: string): void {
 }
 
 export async function fireNotification(taskId: string, title: string, dueDate: string, dueTime?: string): Promise<void> {
+  console.error(dueDate);
   const body = dueTime ? `Due at ${formatTime(dueTime)}` : 'Due today'
   const options: NotificationOptions = {
     body,

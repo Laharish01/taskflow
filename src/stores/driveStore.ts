@@ -4,7 +4,7 @@ import type { GoogleDriveConfig } from '../types'
 import {
   initDrive, requestSignIn, driveSignOut,
   driveLoad, driveSave,
-  isInitialized, isDriveConfigured, hasValidToken,
+  isDriveConfigured, hasValidToken,
 } from '../utils/gdrive'
 import { useTaskStore } from './taskStore'
 import { isoNow } from '../utils/helpers'
